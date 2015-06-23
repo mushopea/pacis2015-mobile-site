@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+
+<head>
+	<title> PACIS 2015 </title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+
+
+	<!-- Javascript includes -->
+	<script src="js/jquery-1.10.2.js"></script>
+	<script src="js/mobileinit.js"></script>
+	<script src="js/ios-orientationchange-fix.min.js"></script>
+	<script src="js/jquery.mobile-1.4.0.js"></script>
+	<script src="js/application.js"></script>
+
+	<!-- For iPhone 4 with high-resolution Retina display: -->
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="icons/appicon114.png">
+	<!-- For first-generation iPad: -->
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="icons/appicon72.png">
+	<!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+	<link rel="apple-touch-icon-precomposed" href="icons/appicon57.png">
+	<!-- For nokia devices and desktop browsers : -->
+	<link rel="shortcut icon" href="icons/favicon.ico" />
+
+	<!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
+	<meta http-equiv="cleartype" content="on">
+	<!-- jQuery Mobile CSS bits -->
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.0.min.css" />
+	<link rel="stylesheet" href="css/mushotheme.min.css" />
+	<!-- fa -->
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<!-- Custom css -->
+	<link rel="stylesheet" href="css/main.css" />
+
+
+
+	<!-- Startup Images for iDevices -->
+	<script>
+		(function() {
+			var a;
+			if (navigator.platform === "iPad") {
+				a = window.orientation !== 90 || window.orientation === -90 ? "images/startup-tablet-landscape.png" : "images/startup-tablet-portrait.png"
+			} else {
+				a = window.devicePixelRatio === 2 ? "images/startup-retina.png" : "images/startup.png"
+			}
+			document.write('<link rel="apple-touch-startup-image" href="' + a + '"/>')
+		})()
+	</script>
+
+	<!-- The script prevents links from opening in mobile safari. https://gist.github.com/1042026 -->
+	<script>
+		(function(a, b, c) {
+			if (c in b && b[c]) {
+				var d, e = a.location,
+					f = /^(a|html)$/i;
+				a.addEventListener("click", function(a) {
+					d = a.target;
+					while (!f.test(d.nodeName)) d = d.parentNode;
+					"href" in d && (d.href.indexOf("http") || ~d.href.indexOf(e.host)) && (a.preventDefault(), e.href = d.href)
+				}, !1)
+			}
+		})(document, window.navigator, "standalone")
+	</script>
+</head>
+<body>
+
+	<!-- home page -->
+	<div data-role="page" id="home">
+		<div data-role="content" class="home-container">
+			<div class="home-content">
+
+				<div class="home-image">
+					<img src="images/home.png">
+				</div>
+				
+				<div class="home-description">
+					The 19th Pacific Asia Conference on Information Systems (PACIS 2015) provides a forum for researchers and practitioners working on all aspects of Information Systems.
+				</div>
+
+			</div>
+		</div>
+
+		<div data-role="footer">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#programs"><i class="fa fa-calendar-o nav-icon"></i>Programs</a></li>
+					<li><a href="#proceedings" class="ui-btn-active"><i class="fa fa-file-text nav-icon"></i>Proceedings</a></li>
+					<li><a href="#venue"><i class="fa fa-map-marker nav-icon"></i>Venue</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- end of page -->
+
+
+</body>
+</html>
