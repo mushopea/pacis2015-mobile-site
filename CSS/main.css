@@ -46,8 +46,30 @@ html, body {
   overflow: hidden;
 }
 
+h1 {
+  text-shadow: none;
+  color: rgb(68, 76, 102);
+  text-align: center;
+  font-weight: 300;
+  margin-top: 50px;
+}
+
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 0.85em;
+}
+
+h2:before, h2:after {
+  content: "\2014";
+}
+
 .ui-content {
   padding: 0;
+  height: 100%;
+  overflow: hidden;
 }
 
 [data-role=page] {
@@ -112,16 +134,25 @@ html, body {
 }
 
 .programs-content {
+  padding: 0px 10px;
+  padding-bottom: 55px;
+  background-color: rgb(184, 198, 219);
+  height: 100%;
+}
+
+.programs-day {
+  padding-top: 30px;
 }
 
 .timeperiod {
   border: 1px solid #666;
-  border-radius: 3px;
+  border-radius: 10px 10px 5px 5px;
   width: 100%;
-  max-width: 500px;
+  max-width: 450px;
   margin: 30px auto;
   border-spacing: 0px;
   border-collapse: separate;
+  background-color: rgb(252, 252, 252);
 }
 
 .timeperiod tr {
@@ -129,16 +160,16 @@ html, body {
 }
 
 .timeperiod tr p {
-  padding: 0.5em 0.5em;
 }
 
 .timeperiod tr:first-child td {
   text-shadow: none;
-  font-size: 1.5em;
+  border-radius: 10px 10px 0px 0px;
+  font-size: 1.1em;
   font-weight: bold;
   text-align: center;
   color: #fff;
-  background-color: #111;
+  background-color: #262739;
 }
 
 .timeperiod tr:first-child td p {

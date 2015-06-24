@@ -11,7 +11,6 @@
 	<meta name="HandheldFriendly" content="True">
 	<meta name="MobileOptimized" content="320">
 
-
 	<!-- Javascript includes -->
 	<script src="js/jquery-1.10.2.js"></script>
 	<script src="js/mobileinit.js"></script>
@@ -32,13 +31,10 @@
 	<meta http-equiv="cleartype" content="on">
 	<!-- jQuery Mobile CSS bits -->
 	<link rel="stylesheet" href="css/jquery.mobile-1.4.0.min.css" />
-	<link rel="stylesheet" href="css/mushotheme.min.css" />
 	<!-- fa -->
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 	<!-- Custom css -->
 	<link rel="stylesheet" href="css/main.css" />
-
-
 
 	<!-- Startup Images for iDevices -->
 	<script>
@@ -100,17 +96,22 @@
 	<!-- programs FIRST page -->
 	<div data-role="page" id="programs" data-prev="home" data-next="proceedings" data-transition="slide">
 		<div data-role="content" class="programs-container">
-			<div class="programs-content">
 
-				<select id="programsdate">
-					<option selected="selected" value="">Choose day</option>
-					<option value="#programs1">Sunday, 5 July</option>
-					<option value="#programs2">Monday, 6 July</option>
-					<option value="#programs3">Tuesday, 7 July</option>
-					<option value="#programs4">Wednesday, 8 July</option>
-					<option value="#programs5">Thursday, 9 July</option>
-				</select>
-				<div id="programs1">
+			<select id="programsdate">
+				<option selected="selected" value="">Choose day</option>
+				<option value="#programs1">Sunday, 5 July</option>
+				<option value="#programs2">Monday, 6 July</option>
+				<option value="#programs3">Tuesday, 7 July</option>
+				<option value="#programs4">Wednesday, 8 July</option>
+				<option value="#programs5">Thursday, 9 July</option>
+			</select>
+
+			<div class="programs-content">
+				<div id="programs1" class="programs-day">
+
+					<h1> Sunday, 5 July </h1>
+					<h2> Day One </h2>
+
 					<table class="timeperiod">
 						<tr>
 							<td>
@@ -127,9 +128,27 @@
 							</td>
 						</tr>
 					</table>
+
+					<table class="timeperiod">
+						<tr>
+							<td>
+								<P>
+									6.00pm - 8.00pm
+								</P>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<P>
+									Doctoral Consortium Welcome Dinner
+								</P>
+							</td>
+						</tr>
+					</table>
+
 				</div>
 
-				<div id="programs2">
+				<div id="programs2" class="programs-day">
 					<table class="timeperiod">
 						<tr>
 							<td>
