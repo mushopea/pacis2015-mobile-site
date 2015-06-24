@@ -71,7 +71,7 @@
 <body>
 
 	<!-- home page -->
-	<div data-role="page" id="home">
+	<div data-role="page" id="home" class="home" data-next="programs">
 		<div data-role="content" class="home-container">
 			<div class="home-content">
 				<div class="home-image">
@@ -97,25 +97,25 @@
 
 
 
-		<!-- programs page -->
-		<div data-role="page" id="programs">
-			<div data-role="content" class="programs-container">
-				<div class="programs-content">
-						BLABLABLABALBLA
-				</div>
-			</div>
-
-			<div data-role="footer">
-				<div data-role="navbar">
-					<ul>
-						<li><a href="#programs" class="ui-btn-active"><i class="fa fa-calendar-o nav-icon"></i>Programs</a></li>
-						<li><a href="#proceedings"><i class="fa fa-file-text nav-icon"></i>Proceedings</a></li>
-						<li><a href="#venue"><i class="fa fa-map-marker nav-icon"></i>Venue</a></li>
-					</ul>
-				</div>
+	<!-- programs page -->
+	<div data-role="page" id="programs" data-prev="home" data-next="proceedings">
+		<div data-role="content" class="programs-container">
+			<div class="programs-content">
+					BLABLABLABALBLA
 			</div>
 		</div>
-		<!-- end of page -->
+
+		<div data-role="footer">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#programs" class="ui-btn-active"><i class="fa fa-calendar-o nav-icon"></i>Programs</a></li>
+					<li><a href="#proceedings"><i class="fa fa-file-text nav-icon"></i>Proceedings</a></li>
+					<li><a href="#venue"><i class="fa fa-map-marker nav-icon"></i>Venue</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- end of page -->
 
 
 </body>

@@ -39,11 +39,11 @@
 
 /* base styles and overrides */
 html, body {
-  font-size: 14px !important;
-  font-family: 'Open Sans' !important;
-  text-shadow: none !important;
-  height: 100% !important;
-  overflow: hidden !important;
+  font-size: 14px;
+  font-family: 'Open Sans';
+  text-shadow: none;
+  height: 100%;
+  overflow: hidden;
 }
 
 .ui-content {
@@ -51,15 +51,16 @@ html, body {
 }
 
 [data-role=page] {
-  height: 100% !important;
-  position: relative !important;
+  height: 100%;
+  position: relative;
 }
 
 [data-role=footer] {
   bottom: 0;
-  position: fixed !important;
-  top: auto !important;
+  position: fixed;
+  top: auto;
   width: 100%;
+  border: none;
 }
 
 /* icon */
