@@ -102,3 +102,45 @@ html, body {
   font-size: 4vmin;
   padding-bottom: 55px;
 }
+
+/* Programs */
+.ui-select {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  margin: 0;
+}
+
+.programs-content {
+}
+
+.timeperiod {
+  border: 1px solid #666;
+  border-radius: 3px;
+  width: 100%;
+  max-width: 500px;
+  margin: 30px auto;
+  border-spacing: 0px;
+  border-collapse: separate;
+}
+
+.timeperiod tr {
+  text-align: center;
+}
+
+.timeperiod tr p {
+  padding: 0.5em 0.5em;
+}
+
+.timeperiod tr:first-child td {
+  text-shadow: none;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  background-color: #111;
+}
+
+.timeperiod tr:first-child td p {
+
+}
