@@ -1,0 +1,104 @@
+/* font */
+@font-face {
+    font-family: 'Open Sans';
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url(../fonts/OpenSans-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url(../fonts/OpenSans-Light.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url(../fonts/OpenSans-Italic.ttf);
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url(../fonts/OpenSans-BoldItalic.ttf);
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url(../fonts/OpenSans-LightItalic.ttf);
+    font-weight: 300;
+    font-style: italic;
+}
+
+
+/* base styles and overrides */
+html, body {
+  font-size: 14px;
+  font-family: 'Open Sans';
+  text-shadow: none;
+  height: 100%;
+  overflow: hidden;
+}
+
+.ui-content {
+  padding: 0;
+}
+
+[data-role=page] {
+  height: 100%;
+  position: relative;
+}
+
+[data-role=footer] {
+  bottom: 0;
+  position: fixed;
+  top: auto;
+  width: 100%;
+  border: none;
+}
+
+/* icon */
+.nav-icon {
+  display: block !important;
+  padding: 5px 0px;
+}
+
+/* Home */
+.home-container {
+  background-color: #343434;
+  color: #fff;
+  height: 100%;
+  overflow: hidden;
+  text-shadow: none !important;
+  display: table;
+  width: 100%;
+}
+
+.home-image {
+  text-align: center;
+}
+
+.home-image img {
+  max-width: 60%;
+}
+
+.home-description {
+  padding: 2% 10%;
+  text-align: justify;
+  font-weight: 300;
+}
+
+.home-content {
+  vertical-align: middle;
+  display: table-cell;
+  text-align: center;
+  font-size: 14px;
+  font-size: 4vmin;
+  padding-bottom: 55px;
+}
