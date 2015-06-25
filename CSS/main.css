@@ -66,7 +66,7 @@ h2:before, h2:after {
   content: "\2014";
 }
 
-hr { 
+hr {
   border: 0;
   height: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
@@ -184,6 +184,7 @@ hr {
   text-align: center;
   color: #fff;
   background-color: #262739;
+  padding: 10px;
 }
 
 .timeperiod tr:first-child td p {
@@ -197,18 +198,40 @@ hr {
   margin-right: 5px;
 }
 
+.tablefood:before {
+  font-family: FontAwesome;
+  content: "\f0f4";
+  color: rgb(95, 113, 148);
+  display: block;
+  margin-bottom: 5px;
+}
+
 .tablespeaker {
-  color: rgb(118, 135, 167);
-  font-style: italic;
+  color: rgb(95, 113, 148);
+  margin-bottom: 5px;
 }
 
 .tablevenue::before {
   font-family: FontAwesome;
-  content: "\f21d"; /* or use: univerity [f19c], location arrow [f124] */
+  content: "\f124"; /* or use: univerity [f19c], location arrow [f124], streetview f21d */
+  margin-right: 5px;
 }
 
 .tablevenue {
   color: rgb(95, 113, 148);
+  font-weight: bold;
+}
+
+.tabletrack::before {
+  /*font-family: FontAwesome;
+  content: "\f19d";
+  color: rgb(118, 135, 167);
+  display: block;
+  padding-top: 10px;*/
+}
+.tabletrack {
+  background-color: #EBECF5;
+  padding: 10px;
 }
 
 /* more unicode:

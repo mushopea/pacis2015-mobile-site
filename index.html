@@ -64,6 +64,7 @@
 		})(document, window.navigator, "standalone")
 	</script>
 </head>
+
 <body>
 
 	<!-- home page -->
@@ -123,7 +124,10 @@
 						<tr>
 							<td>
 								<P>
-									Doctoral Consortium – UTown
+									Doctoral Consortium
+									<div class="tablevenue">
+										NUS UTown
+									</div>
 								</P>
 							</td>
 						</tr>
@@ -140,7 +144,9 @@
 						<tr>
 							<td>
 								<P>
-									Doctoral Consortium Welcome Dinner
+									<div class="tablefood">
+										Doctoral Consortium Welcome Dinner
+									</div>
 								</P>
 							</td>
 						</tr>
@@ -188,8 +194,10 @@
 						<tr>
 							<td>
 								<P>
-									Opening Keynote 1, MBS, Jasmine Junior Ballroom
-									<br><div class="tablespeaker">Toh Chai Keong, Asst. Chief Executive, IDA</div></I>
+									Opening Keynote 1
+									<div class="tablespeaker">Toh Chai Keong, Asst. Chief Executive, IDA</div>
+									</I>
+									<div class="tablevenue">MBS, Jasmine Junior Ballroom</div>
 								</P>
 							</td>
 						</tr>
@@ -207,7 +215,13 @@
 						<tr>
 							<td>
 								<P>
-									Coffee Break
+									<div class="tablefood">
+										Coffee Break
+									</div>
+								</P>
+								<P>
+
+
 									<div class="tablevenue">
 										MBS, Foyer behind Hibiscus
 									</div>
@@ -219,20 +233,24 @@
 
 					<table class="timeperiod">
 						<tr>
-							<td>
+							<td colspan="2">
 								<P>
 									10.30am - 12.00pm
 								</P>
 							</td>
 						</tr>
 						<tr>
-							<td>
+							<td class="tabletrack">
 								<P>
 									T2 - Knowledge Management
 									<div class="tablevenue">
 										<a href="">Hibiscus 3611</a>
 									</div>
 								</P>
+							</td>
+
+							<td>
+								More info
 							</td>
 						</tr>
 					</table>
@@ -308,13 +326,13 @@
 	<!--js-->
 	<!-- for select dropdown in programs -->
 	<script>
-	$("#programsdate").change(function(){
-		if (this.selectedIndex!==0) {
-			console.log($(this).val());
+		$("#programsdate").change(function() {
+			if (this.selectedIndex !== 0) {
+				console.log($(this).val());
 				window.location.href = $(this).val();
-		}
-	});
-
+			}
+		});
 	</script>
 </body>
+
 </html>
