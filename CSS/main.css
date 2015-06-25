@@ -134,19 +134,23 @@ h2:before, h2:after {
 }
 
 .programs-content {
-  padding: 0px 10px;
+  padding: 0px 0px;
   padding-bottom: 55px;
   background-color: rgb(184, 198, 219);
   height: 100%;
 }
 
 .programs-day {
-  padding-top: 30px;
+  padding: 30px 10px 50px;
+}
+
+.programs-day:nth-child(even) {
+  background-color: rgb(202, 213, 230);
 }
 
 .timeperiod {
-  border: 1px solid #666;
-  border-radius: 10px 10px 5px 5px;
+  border: 0px solid #666;
+  border-radius: 5px 5px 5px 5px;
   width: 100%;
   max-width: 450px;
   margin: 30px auto;
@@ -164,7 +168,7 @@ h2:before, h2:after {
 
 .timeperiod tr:first-child td {
   text-shadow: none;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 5px 5px 0px 0px;
   font-size: 1.1em;
   font-weight: bold;
   text-align: center;
