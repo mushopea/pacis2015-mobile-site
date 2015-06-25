@@ -66,10 +66,16 @@ h2:before, h2:after {
   content: "\2014";
 }
 
+hr { 
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
 .ui-content {
   padding: 0;
   height: 100%;
-  overflow: hidden;
 }
 
 [data-role=page] {
@@ -136,7 +142,7 @@ h2:before, h2:after {
 .programs-content {
   padding: 0px 0px;
   padding-bottom: 55px;
-  background-color: rgb(184, 198, 219);
+  background-color: rgb(187, 202, 222);
   height: 100%;
 }
 
@@ -146,6 +152,10 @@ h2:before, h2:after {
 
 .programs-day:nth-child(even) {
   background-color: rgb(202, 213, 230);
+}
+
+.programs-day:nth-child(odd) {
+  background-color: rgb(187, 202, 222);
 }
 
 .timeperiod {
@@ -179,3 +189,33 @@ h2:before, h2:after {
 .timeperiod tr:first-child td p {
 
 }
+
+.tablespeaker::before {
+  font-family: FontAwesome;
+  content: "\f007";
+  font-style: normal;
+  margin-right: 5px;
+}
+
+.tablespeaker {
+  color: rgb(118, 135, 167);
+  font-style: italic;
+}
+
+.tablevenue::before {
+  font-family: FontAwesome;
+  content: "\f21d"; /* or use: univerity [f19c], location arrow [f124] */
+}
+
+.tablevenue {
+  color: rgb(95, 113, 148);
+}
+
+/* more unicode:
+map marker : f041
+pdf icon: f1c1
+grad cap: f19d
+plus: f067
+plus circle: f055
+info circle: f05a
+info: f129 */
