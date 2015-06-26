@@ -171,6 +171,7 @@ hr {
 
 .timeperiod tr {
   text-align: center;
+  padding: 5px;
 }
 
 .timeperiod tr p {
@@ -209,6 +210,7 @@ hr {
 .tablespeaker {
   color: rgb(95, 113, 148);
   margin-bottom: 5px;
+  font-weight: bold;
 }
 
 .tablevenue::before {
@@ -220,6 +222,7 @@ hr {
 .tablevenue {
   color: rgb(95, 113, 148);
   font-weight: bold;
+  margin-bottom: 5px;
 }
 
 .tabletrack::before {
