@@ -16,6 +16,8 @@
 	<script src="js/mobileinit.js"></script>
 	<script src="js/ios-orientationchange-fix.min.js"></script>
 	<script src="js/jquery.mobile-1.4.0.js"></script>
+	<script src="js/panzoom.js"></script>
+	<script src="js/pointertouch.js"></script>
 	<script src="js/application.js"></script>
 
 	<!-- For iPhone 4 with high-resolution Retina display: -->
@@ -320,7 +322,47 @@
 	</div>
 	<!-- end of page -->
 
+	<!-- proceedings page -->
+	<div data-role="page" id="proceedings" class="proceedings" data-prev="programs" data-next="venue" data-transition="slide">
+		<div data-role="content" class="proceedings-container">
+			<div class="proceedings-content">
+				Proceedings.
+			</div>
+		</div>
 
+		<div data-role="footer">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#programs"><i class="fa fa-calendar-o nav-icon"></i>Programs</a></li>
+					<li><a href="#proceedings" class="ui-btn-active"><i class="fa fa-file-text nav-icon"></i>Proceedings</a></li>
+					<li><a href="#venue"><i class="fa fa-map-marker nav-icon"></i>Venue</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- end of page -->
+
+	<!-- venue page -->
+	<div data-role="page" id="venue" class="venue" data-prev="proceedings" data-transition="slide">
+		<div data-role="content" class="venue-container">
+			<div class="venue-content">
+				<div class="venue-image panzoom">
+					<img src="images/venue.png">
+				</div>
+			</div>
+		</div>
+
+		<div data-role="footer">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#programs"><i class="fa fa-calendar-o nav-icon"></i>Programs</a></li>
+					<li><a href="#proceedings"><i class="fa fa-file-text nav-icon"></i>Proceedings</a></li>
+					<li><a href="#venue" class="ui-btn-active"><i class="fa fa-map-marker nav-icon"></i>Venue</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- end of page -->
 
 
 	<!--js-->

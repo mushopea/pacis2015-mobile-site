@@ -2,10 +2,21 @@
 	jQuery Mobile Boilerplate
 	application.js
 */
+
+$(document).ready(function(){
+  $(".panzoom").panzoom();  
+});
+
 $(document).on("pageinit", function(event){
   console.log("page init!");
 	// custom code goes here
 });
+
+// Pass options
+// $("a.panzoom-elements").panzoom({
+//   minScale: 0.2,
+//   $zoomRange: $("input[type='range']")
+// });
 
 // Pagecreate will fire for each of the pages in this demo
 // but we only need to bind once so we use "one()"
