@@ -78,6 +78,10 @@ hr {
   height: 100%;
 }
 
+.ui-btn {
+  margin: 0;
+}
+
 [data-role=page] {
   height: 100%;
   position: relative;
@@ -215,7 +219,7 @@ hr {
 
 .tablevenue::before {
   font-family: FontAwesome;
-  content: "\f124"; /* or use: univerity [f19c], location arrow [f124], streetview f21d */
+  content: "\f124";
   margin-right: 5px;
 }
 
@@ -225,16 +229,37 @@ hr {
   margin-bottom: 5px;
 }
 
-.tabletrack::before {
-  /*font-family: FontAwesome;
-  content: "\f19d";
-  color: rgb(118, 135, 167);
-  display: block;
-  padding-top: 10px;*/
-}
 .tabletrack {
   background-color: #EBECF5;
   padding: 10px;
+}
+
+.trackinfo .ui-link {
+  text-decoration: none;
+}
+
+.trackinfo::before {
+  font-family: FontAwesome;
+  content: "\f055";
+  color: rgb(80, 152, 0);
+  display: block;
+  margin-bottom: 5px;
+  font-size: 2em;
+}
+
+.trackinfo:hover {
+  color: rgb(67, 128, 0);
+}
+
+/* map dialog */
+
+.map-content img {
+    width: 100%;
+}
+
+.map-page {
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 /* more unicode:
