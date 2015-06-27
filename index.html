@@ -68,7 +68,6 @@
 </head>
 
 <body>
-
 	<!-- home page -->
 	<div data-role="page" id="home" class="home" data-next="programs" data-transition="slide">
 		<div data-role="content" class="home-container">
@@ -95,7 +94,6 @@
 	<!-- end of page -->
 
 
-
 	<!-- programs FIRST page -->
 	<div data-role="page" id="programs" data-prev="home" data-next="proceedings" data-transition="slide">
 		<div data-role="content" class="programs-container">
@@ -111,6 +109,7 @@
 
 			<div class="programs-content">
 				<div id="programs1" class="programs-day">
+
 
 					<h1> Sunday, 5 July </h1>
 					<h2> Day One </h2>
@@ -243,14 +242,22 @@
 						</tr>
 						<tr>
 							<td class="tabletrack">
-								<P>
+								<p>
 									T2 - Knowledge Management
 									<div class="tablevenue">
-										<a href="#map1">Hibiscus 3611</a>
-									</div>
-								</P>
+                                        <a href="#map1" data-rel="popup" data-transition="pop">Hibiscus 3611</a>
+                                        <div data-role="popup" id="map1" class="map-page">
+                                            <div data-role="content" class="map-container">
+                                                <div class="map-content">
+                                                    <div data-role="header"><h2>Hibiscus 3611</h2></div>
+                                                    <img src="images/map/hibiscus3611.png">
+                                                </div>
+                                            </div>
+                                            <a href="#" data-rel="back" data-role="button" data-theme="b" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                                        </div>
+                                    </div>
+								</p>
 							</td>
-
 							<td>
 								<div class="trackinfo"><a href="">More info</a></div>
 							</td>
@@ -363,31 +370,6 @@
 		</div>
 	</div>
 	<!-- end of page -->
-
-
-	<!-- [[[[[ map page 1 ]]]]]-->
-	<div data-role="popup" id="map1" class="map-page">
-		<div data-role="content" class="map-container">
-			<div class="map-content">
-			  <div data-role="header"><h2>Hibiscus 3611</h2></div>
-				<img src="images/map/hibiscus3611.png">
-			</div>
-		</div>
-    <a href="#" data-rel="back" data-role="button" data-theme="b" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-	</div>
-	<!-- end of page -->
-
-
-	<!--js-->
-	<!-- for select dropdown in programs -->
-	<script>
-		$("#programsdate").change(function() {
-			if (this.selectedIndex !== 0) {
-				console.log($(this).val());
-				window.location.href = $(this).val();
-			}
-		});
-	</script>
 </body>
 
 </html>
