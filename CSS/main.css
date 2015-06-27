@@ -280,6 +280,7 @@ hr {
 .tabletrack {
   background-color: #EBECF5;
   padding: 10px;
+  border-bottom: 1px solid #CBCAD7;
 }
 
 .trackinfo .ui-link {
@@ -328,7 +329,7 @@ hr {
 
 /* info dialog */
 .info-container {
-  padding: 3px;
+  padding: 25px;
 }
 
 .info-chair::before {
@@ -341,7 +342,7 @@ hr {
 }
 
 .info-chair {
-  font-size: 0.8em;
+  font-size: 1em;
   letter-spacing: 1px;
   font-weight: bold;
   text-transform: uppercase;
@@ -351,7 +352,7 @@ hr {
 .paper-info {
   padding: 8px;
   color: #3F3F71;
-  font-size: 0.8em;
+  letter-spacing: 1px;
 }
 
 .info-page {
@@ -372,4 +373,18 @@ info: f129 */
   body {
     font-size: 12px;
   }
+
+  .info-container {
+    padding: 3px;
+  }
+
+  .info-chair {
+    font-size: 0.9em;
+  }
+
+  .paper-info {
+    font-size: 0.9em;
+  }
+
+
 }
