@@ -67,6 +67,14 @@ h2:before, h2:after {
   content: "\2014";
 }
 
+h3 {
+  background-color: rgb(220, 227, 242);
+  padding: 5px;
+  font-weight: 700;
+  color: rgb(48, 47, 68);
+  border-left: 4px solid rgba(48, 47, 125, 0.6);
+}
+
 hr {
   border: 0;
   height: 0;
@@ -311,6 +319,38 @@ hr {
 
 .ui-popup.ui-body-inherit {
   border: 0px;
+}
+
+/* info dialog */
+.info-container {
+  padding: 3px;
+}
+
+.info-chair::before {
+  font-family: FontAwesome;
+  content: "\f19d";
+  font-style: normal;
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.info-chair {
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.paper-info {
+  padding: 8px;
+  color: #3F3F71;
+  font-size: 0.8em;
+}
+
+.info-page {
+  max-width: 550px;
 }
 
 /* more unicode:
