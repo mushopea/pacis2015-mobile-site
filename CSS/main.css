@@ -365,6 +365,25 @@ hr {
   max-width: 550px;
 }
 
+/* header icons */
+.tracks-icon {
+  margin: 5px auto;
+  font-size: 1.4em;
+}
+
+.icon-morning {
+  color: rgb(255, 138, 0);
+}
+
+.icon-afternoon {
+  color: rgb(64, 203, 255);
+}
+
+.icon-evening {
+  color: rgb(255, 222, 0);
+}
+
+
 /* more unicode:
 map marker : f041
 pdf icon: f1c1
