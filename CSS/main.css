@@ -375,14 +375,18 @@ info: f129 */
   }
 
   .info-container {
-    padding: 3px;
+    padding: 12px;
   }
 
   .info-chair {
-    font-size: 0.9em;
+    font-size: 0.8em;
   }
 
   .paper-info {
+    font-size: 0.8em;
+  }
+
+  .paper-info h3 {
     font-size: 0.9em;
   }
 
