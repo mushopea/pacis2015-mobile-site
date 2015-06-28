@@ -417,7 +417,7 @@ hr {
 }
 
 .ui-page-theme-a .ui-btn:active, .ui-page-theme-a .ui-btn:hover {
-  border-color: rgb(27, 35, 53);
+  border: 0px;
   color:  rgb(224, 175, 80);
   text-shadow: none;
   background: rgb(27, 35, 53);
