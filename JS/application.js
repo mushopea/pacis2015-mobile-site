@@ -41,6 +41,7 @@ $(document).on("pagecreate", function() {
         $(".ui-collapsible-content", current).slideUp(300);
       }
     });
+
 });
 
 // Pagecreate will fire for each of the pages in this demo
