@@ -48,7 +48,7 @@ html, body {
 
 h1 {
   text-shadow: none;
-  color: rgb(68, 76, 102);
+  color: rgb(13, 19, 38);
   text-align: center;
   font-weight: 300;
   margin-top: 50px;
@@ -369,7 +369,7 @@ hr {
   max-width: 550px;
 }
 
-/* header icons */
+/* program tracks header icons */
 .tracks-icon {
   margin: 5px auto;
   font-size: 1.4em;
@@ -388,6 +388,40 @@ hr {
   color: rgb(255, 222, 0);
 }
 
+/* proceedings */
+.proceedings-content {
+  background-color: #BBCADE;
+}
+
+.proceeding-paper {
+	padding: 2px 20px;
+	margin: 20px;
+  border-radius: 0.5em;
+}
+
+.proceeding-paper:nth-child(odd) {
+	background-color: #E2ECFA;
+}
+
+.proceeding-paper:nth-child(even) {
+	background-color: #FCFEFF;
+}
+
+.proceedings-content h3 {
+  border: 0px;
+  font-size: 0.9em;
+}
+
+.ui-page-theme-a .ui-btn {
+  font-size: 1.2em;
+}
+
+.ui-page-theme-a .ui-btn:active, .ui-page-theme-a .ui-btn:hover {
+  border-color: rgb(27, 35, 53);
+  color:  rgb(224, 175, 80);
+  text-shadow: none;
+  background: rgb(27, 35, 53);
+}
 
 /* more unicode:
 map marker : f041
