@@ -91,6 +91,10 @@ hr {
   margin: 0;
 }
 
+.ui-select {
+  z-index: 999999;
+}
+
 /* NAV BAR */
 .ui-navbar li .ui-btn {
   font-size: 0.9em;
@@ -369,6 +373,7 @@ hr {
 .tracks-icon {
   margin: 5px auto;
   font-size: 1.4em;
+  z-index: -1;
 }
 
 .icon-morning {
