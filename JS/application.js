@@ -29,14 +29,6 @@ $(document).ready(function() {
 });
 
 $(document).on("pagecreate", function() {
-
-    $('#accordion').bind('accordionactivate', function(event, ui) {
-      /* In here, ui.newHeader = the newly active header as a jQ object
-                  ui.newContent = the newly active content area */
-      $(ui.newHeader).ScrollTo();
-      console.log("scrolling to new header of accordion");
-    });
-
     // animate accordion
     $(".accordion-section .ui-collapsible-heading-toggle").on("click", function(e) {
       var current = $(this).closest(".ui-collapsible");

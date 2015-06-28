@@ -412,25 +412,17 @@ hr {
   font-size: 0.9em;
 }
 
-.ui-page-theme-a .ui-btn {
+#accordion .ui-btn {
   font-size: 1.2em;
 }
 
-.ui-page-theme-a .ui-btn:active, .ui-page-theme-a .ui-btn:hover {
+#accordion .ui-btn:active, #accordion .ui-btn:hover {
   border: 0px;
   color:  rgb(224, 175, 80);
   text-shadow: none;
   background: rgb(27, 35, 53);
 }
 
-/* more unicode:
-map marker : f041
-pdf icon: f1c1
-grad cap: f19d
-plus: f067
-plus circle: f055
-info circle: f05a
-info: f129 */
 
 /* media */
 @media screen and (max-width:480px) {
