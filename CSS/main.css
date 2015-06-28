@@ -98,6 +98,10 @@ hr {
   font-family: 'Open Sans';
 }
 
+.ui-page-theme-a .ui-btn.ui-btn-active {
+  border-color: #262739;
+}
+
 .ui-footer .ui-navbar .ui-btn {
   border-bottom: 4px solid rgb(232, 230, 226);
 }
@@ -119,6 +123,8 @@ hr {
 .ui-page-theme-a .ui-btn:focus, html .ui-bar-a .ui-btn:focus, html .ui-body-a .ui-btn:focus, html body .ui-group-theme-a .ui-btn:focus, html head + body .ui-btn.ui-btn-a:focus, .ui-page-theme-a .ui-focus, html .ui-bar-a .ui-focus, html .ui-body-a .ui-focus, html body .ui-group-theme-a .ui-focus, html head + body .ui-btn-a.ui-focus {
   box-shadow: none;
 }
+
+
 
 /* Data role stuff */
 [data-role=page] {
