@@ -22,6 +22,14 @@ $(document).ready(function() {
   $(".panzoom").panzoom();
 });
 
+$(window).load(function(){
+  $('#programsdate').on('change', function(){
+    console.log("Scrolling to " + $(this).val());
+    $('body,html').animate({ scrollTop: $('#' + $(this).val()).offset().top });
+  //  $(window).scrollTo(document.getElementById($(this).val()), 800);
+  });
+});
+
 $(document).on("pagecreate", function() {
   // animate accordion
   $(".accordion-section .ui-collapsible-heading-toggle").on("click", function(e) {
@@ -36,14 +44,6 @@ $(document).on("pagecreate", function() {
     }
   });
 
-
-      $('#programsdate').on('change', function() {
-        console.log("Scrolling to " + $(this).val());
-        /*$('body,html').animate({
-          scrollTop: $('#' + $(this).val()).position().top
-        });*/
-        $(window).scrollTo($(this).val, { duration:800 });
-      });
 });
 
 // Pagecreate will fire for each of the pages in this demo
