@@ -20,28 +20,30 @@ function navprev(prev) {
 
 $(document).ready(function() {
   $(".panzoom").panzoom();
-
-  $("#programsdate").change(function() {
-    if (this.selectedIndex !== 0) {
-      window.location.href = $(this).val();
-    }
-  });
 });
 
 $(document).on("pagecreate", function() {
-    // animate accordion
-    $(".accordion-section .ui-collapsible-heading-toggle").on("click", function(e) {
-      var current = $(this).closest(".ui-collapsible");
-      if (current.hasClass("ui-collapsible-collapsed")) {
-        //collapse all others and then expand this one
-        console.log("expanding and animating accordion");
-        $(".ui-collapsible").not(".ui-collapsible-collapsed").find(".ui-collapsible-heading-toggle").click();
-        $(".ui-collapsible-content", current).slideDown(300);
-      } else {
-        $(".ui-collapsible-content", current).slideUp(300);
-      }
-    });
+  // animate accordion
+  $(".accordion-section .ui-collapsible-heading-toggle").on("click", function(e) {
+    var current = $(this).closest(".ui-collapsible");
+    if (current.hasClass("ui-collapsible-collapsed")) {
+      //collapse all others and then expand this one
+      console.log("expanding and animating accordion");
+      $(".ui-collapsible").not(".ui-collapsible-collapsed").find(".ui-collapsible-heading-toggle").click();
+      $(".ui-collapsible-content", current).slideDown(300);
+    } else {
+      $(".ui-collapsible-content", current).slideUp(300);
+    }
+  });
 
+
+      $('#programsdate').on('change', function() {
+        console.log("Scrolling to " + $(this).val());
+        /*$('body,html').animate({
+          scrollTop: $('#' + $(this).val()).position().top
+        });*/
+        $(window).scrollTo($(this).val, { duration:800 });
+      });
 });
 
 // Pagecreate will fire for each of the pages in this demo

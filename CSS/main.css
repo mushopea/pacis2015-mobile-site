@@ -47,7 +47,7 @@ html, body {
 }
 
 h1 {
-  text-shadow: none;
+  text-shadow: 0px;
   color: rgb(13, 19, 38);
   text-align: center;
   font-weight: 300;
@@ -295,19 +295,24 @@ hr {
 
 .trackinfo .ui-link {
   text-decoration: none;
+  transition: 0.3s ease-in;
 }
 
-.trackinfo::before {
-  font-family: FontAwesome;
-  content: "\f055";
+.trackinfo-icon {
   color: rgb(80, 152, 0);
   display: block;
   margin-bottom: 5px;
   font-size: 2em;
+  text-align: center;
 }
 
-.trackinfo:hover {
-  color: rgb(67, 128, 0);
+/* USAGE OF ICON
+<span class="trackinfo-icon"><i class="fa fa-plus-circle"></i></span>
+*/
+
+.trackinfo-icon:hover {
+  color: rgb(128, 181, 40);
+  transition: 0.3s ease-in;
 }
 
 /* map dialog */
