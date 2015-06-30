@@ -24,9 +24,10 @@ $(document).ready(function() {
 
 $(window).load(function(){
   $('#programsdate').on('change', function(){
-    console.log("Scrolling to " + $(this).val());
-    $('body,html').animate({ scrollTop: $('#' + $(this).val()).offset().top });
-  //  $(window).scrollTo(document.getElementById($(this).val()), 800);
+    var pos = $('#' + $(this).val()).offset().top;
+    console.log("Scrolling to " + $(this).val() + " position is " + pos);
+    //$('body,html').animate({ scrollTop: $('#' + $(this).val()).offset().top });
+    $.mobile.silentScroll(pos);
   });
 });
 
@@ -35,13 +36,19 @@ $(document).on("pagecreate", function() {
   $(".accordion-section .ui-collapsible-heading-toggle").on("click", function(e) {
     var current = $(this).closest(".ui-collapsible");
     if (current.hasClass("ui-collapsible-collapsed")) {
-      //collapse all others and then expand this one
+      //collapse all others and then expand this one (disable collapse temporarily)
       console.log("expanding and animating accordion");
-      $(".ui-collapsible").not(".ui-collapsible-collapsed").find(".ui-collapsible-heading-toggle").click();
+      //$(".ui-collapsible").not(".ui-collapsible-collapsed").find(".ui-collapsible-heading-toggle").click();
       $(".ui-collapsible-content", current).slideDown(300);
     } else {
       $(".ui-collapsible-content", current).slideUp(300);
     }
+  });
+
+  $(document).on("collapsibleexpand", "[data-role=collapsible]", function () {
+    var position = $(this).offset().top;
+    console.log("Accordion scoll to " + position);
+    $.mobile.silentScroll(position);
   });
 
 });

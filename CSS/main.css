@@ -92,7 +92,7 @@ hr {
 }
 
 .ui-select {
-  z-index: 999999;
+  z-index: 999;
 }
 
 /* NAV BAR */
@@ -423,7 +423,6 @@ hr {
   text-shadow: none;
   background: rgb(27, 35, 53);
 }
-
 
 /* media */
 @media screen and (max-width:480px) {
