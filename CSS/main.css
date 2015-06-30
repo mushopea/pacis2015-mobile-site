@@ -46,10 +46,91 @@ html, body {
   overflow: hidden;
 }
 
-.ui-content {
-  padding: 0;
+h1 {
+  text-shadow: 0px;
+  color: rgb(13, 19, 38);
+  text-align: center;
+  font-weight: 300;
+  margin-top: 50px;
+  font-size: 1.6em;
 }
 
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 0.85em;
+}
+
+h2:before, h2:after {
+  content: "\2014";
+}
+
+h3 {
+  background-color: rgb(220, 227, 242);
+  padding: 5px;
+  font-weight: 700;
+  color: rgb(48, 47, 68);
+  border-left: 4px solid rgba(48, 47, 125, 0.6);
+}
+
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.ui-content {
+  padding: 0;
+  height: 100%;
+}
+
+.ui-btn {
+  margin: 0;
+}
+
+.ui-select {
+  z-index: 999;
+}
+
+/* NAV BAR */
+.ui-navbar li .ui-btn {
+  font-size: 0.9em;
+  text-shadow: 0px;
+  font-family: 'Open Sans';
+}
+
+.ui-page-theme-a .ui-btn.ui-btn-active {
+  border-color: #262739;
+}
+
+.ui-footer .ui-navbar .ui-btn {
+  border-bottom: 4px solid rgb(232, 230, 226);
+}
+
+
+.ui-footer .ui-navbar .ui-btn-active {
+  border-bottom: 4px solid rgb(224, 175, 80);
+}
+
+.ui-page-theme-a .ui-btn {
+  color: #0F2956;
+}
+
+.ui-btn-active.ui-link.ui-btn {
+  background-color: #262739;
+  text-shadow: none;
+}
+
+.ui-page-theme-a .ui-btn:focus, html .ui-bar-a .ui-btn:focus, html .ui-body-a .ui-btn:focus, html body .ui-group-theme-a .ui-btn:focus, html head + body .ui-btn.ui-btn-a:focus, .ui-page-theme-a .ui-focus, html .ui-bar-a .ui-focus, html .ui-body-a .ui-focus, html body .ui-group-theme-a .ui-focus, html head + body .ui-btn-a.ui-focus {
+  box-shadow: none;
+}
+
+
+
+/* Data role stuff */
 [data-role=page] {
   height: 100%;
   position: relative;
@@ -90,7 +171,7 @@ html, body {
 
 .home-description {
   padding: 2% 10%;
-  text-align: justify;
+  text-align: center;
   font-weight: 300;
 }
 
@@ -99,6 +180,271 @@ html, body {
   display: table-cell;
   text-align: center;
   font-size: 14px;
-  font-size: 4vmin;
+  font-size: 4.2vmin;
   padding-bottom: 55px;
+}
+
+/* Venue */
+.venue img {
+  width: 300%;
+}
+
+/* Programs */
+.ui-select {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  margin: 0;
+}
+
+.programs-content {
+  padding: 0px 0px;
+  padding-bottom: 55px;
+  background-color: rgb(187, 202, 222);
+  height: 100%;
+}
+
+.programs-day {
+  padding: 30px 10px 50px;
+}
+
+.programs-day:nth-child(even) {
+  background-color: rgb(202, 213, 230);
+}
+
+.programs-day:nth-child(odd) {
+  background-color: rgb(187, 202, 222);
+}
+
+.timeperiod {
+  border: 0px solid #666;
+  border-radius: 5px 5px 5px 5px;
+  width: 100%;
+  max-width: 450px;
+  margin: 30px auto;
+  border-spacing: 0px;
+  border-collapse: separate;
+  background-color: rgb(252, 252, 252);
+}
+
+.timeperiod tr {
+  text-align: center;
+  padding: 5px;
+}
+
+.timeperiod tr p {
+}
+
+.timeperiod td {
+  padding: 2px 5px;
+}
+
+.timeperiod tr:first-child td {
+  text-shadow: none;
+  border-radius: 5px 5px 0px 0px;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  background-color: #262739;
+  padding: 10px;
+}
+
+.timeperiod tr:first-child td p {
+
+}
+
+.tablespeaker::before {
+  font-family: FontAwesome;
+  content: "\f007";
+  font-style: normal;
+  margin-right: 5px;
+}
+
+.tablefood:before {
+  font-family: FontAwesome;
+  content: "\f0f4";
+  color: rgb(95, 113, 148);
+  display: block;
+  margin-bottom: 5px;
+}
+
+.tablespeaker {
+  color: rgb(95, 113, 148);
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.tablevenue::before {
+  font-family: FontAwesome;
+  content: "\f124";
+  margin-right: 5px;
+}
+
+.tablevenue {
+  color: rgb(95, 113, 148);
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.tabletrack {
+  background-color: #EBECF5;
+  padding: 10px;
+  border-bottom: 1px solid #CBCAD7;
+}
+
+.trackinfo .ui-link {
+  text-decoration: none;
+  transition: 0.3s ease-in;
+}
+
+.trackinfo-icon {
+  color: rgb(80, 152, 0);
+  display: block;
+  margin-bottom: 5px;
+  font-size: 2em;
+  text-align: center;
+}
+
+.trackinfo-icon:hover {
+  color: rgb(128, 181, 40);
+  transition: 0.3s ease-in;
+}
+
+/* map dialog */
+
+.map-content img {
+    width: 100%;
+}
+
+.map-page {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.ui-header {
+  border: 0px;
+}
+
+.ui-header .ui-title {
+    margin: 0 auto;
+}
+
+.ui-overlay-shadow {
+  box-shadow: 0px 0px 3px rgba(10, 73, 119, 0.6);
+}
+
+.ui-popup.ui-body-inherit {
+  border: 0px;
+}
+
+/* info dialog */
+.info-container {
+  padding: 25px;
+}
+
+.info-chair::before {
+  font-family: FontAwesome;
+  content: "\f19d";
+  font-style: normal;
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.info-chair {
+  font-size: 1em;
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.paper-info {
+  padding: 8px;
+  color: #3F3F71;
+  letter-spacing: 1px;
+}
+
+.info-page {
+  max-width: 550px;
+}
+
+/* program tracks header icons */
+.tracks-icon {
+  margin: 5px auto;
+  font-size: 1.4em;
+  z-index: -1;
+}
+
+.icon-morning {
+  color: rgb(255, 138, 0);
+}
+
+.icon-afternoon {
+  color: rgb(64, 203, 255);
+}
+
+.icon-evening {
+  color: rgb(255, 222, 0);
+}
+
+/* proceedings */
+.proceedings-content {
+  background-color: #BBCADE;
+}
+
+.proceeding-paper {
+	padding: 2px 20px;
+	margin: 20px;
+  border-radius: 0.5em;
+}
+
+.proceeding-paper:nth-child(odd) {
+	background-color: #E2ECFA;
+}
+
+.proceeding-paper:nth-child(even) {
+	background-color: #FCFEFF;
+}
+
+.proceedings-content h3 {
+  border: 0px;
+  font-size: 0.9em;
+}
+
+#accordion .ui-btn {
+  font-size: 1.2em;
+}
+
+#accordion .ui-btn:active, #accordion .ui-btn:hover {
+  border: 0px;
+  color:  rgb(224, 175, 80);
+  text-shadow: none;
+  background: rgb(27, 35, 53);
+}
+
+/* media */
+@media screen and (max-width:480px) {
+  body {
+    font-size: 12px;
+  }
+
+  .info-container {
+    padding: 12px;
+  }
+
+  .info-chair {
+    font-size: 0.8em;
+  }
+
+  .paper-info {
+    font-size: 0.8em;
+  }
+
+  .paper-info h3 {
+    font-size: 0.9em;
+  }
+
+
 }
