@@ -23,10 +23,11 @@ $(document).ready(function() {
 });
 
 $(window).load(function(){
-  $('.programsdate').on('change', function(){
-    if (this.selectedIndex !== 0) {
-      window.location.href = window.location.pathname + "#" + $(this).val();
-    }
+  $('#programsdate').on('change', function(){
+    var pos = $('#' + $(this).val()).offset().top;
+    console.log("Scrolling to " + $(this).val() + " position is " + pos);
+    //$('body,html').animate({ scrollTop: $('#' + $(this).val()).offset().top });
+    $.mobile.silentScroll(pos);
   });
 });
 
