@@ -392,6 +392,7 @@ hr {
 /* proceedings */
 .proceedings-content {
   background-color: #BBCADE;
+  padding-bottom: 100px;
 }
 
 .proceeding-paper {
@@ -422,6 +423,10 @@ hr {
   color:  rgb(224, 175, 80);
   text-shadow: none;
   background: rgb(27, 35, 53);
+}
+
+.ui-collapsible-inset.ui-collapsible-themed-content .ui-collapsible-content {
+  border: 0px;
 }
 
 /* media */
