@@ -192,21 +192,11 @@ hr {
 }
 
 /* Programs */
-select {
-  font-size: 1.6em;
-  border: 0px;
-  padding: 0.5em;
-  background-color: white;
-}
-
-.select-container {
-  display: block;
+.ui-select {
   top: 0;
   position: fixed;
-  margin: 0;
-  text-align: center;
   width: 100%;
-  background-color: white;
+  margin: 0;
 }
 
 .ui-btn-icon-right:after {
