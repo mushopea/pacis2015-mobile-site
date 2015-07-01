@@ -50,9 +50,10 @@ h1 {
   text-shadow: 0px;
   color: rgb(13, 19, 38);
   text-align: center;
-  font-weight: 300;
+  text-shadow: none;
+  font-weight: 700;
   margin-top: 50px;
-  font-size: 1.6em;
+  font-size: 2em;
 }
 
 h2 {
@@ -71,7 +72,7 @@ h3 {
   background-color: rgb(220, 227, 242);
   padding: 5px;
   font-weight: 700;
-  color: rgb(48, 47, 68);
+  color: #262739;
   border-left: 4px solid rgba(48, 47, 125, 0.6);
 }
 
@@ -196,6 +197,10 @@ hr {
   position: fixed;
   width: 100%;
   margin: 0;
+}
+
+.ui-btn-icon-right:after {
+  background-color: #262739;
 }
 
 .programs-content {
