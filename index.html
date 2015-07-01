@@ -56,7 +56,7 @@
 
 <body>
 <!-- home page -->
-<div data-role="page" id="home" class="home" data-next="programs1" data-transition="slide">
+<div data-role="page" id="home" class="home" data-transition="slide">
     <div data-role="content" class="home-container">
         <div class="home-content">
             <div class="home-image">
@@ -89,7 +89,7 @@
 <!-- end of page -->
 
 <!-- programs FIRST page -->
-<div data-role="page" id="programs1" data-prev="home" data-next="proceedings" data-transition="slide">
+<div data-role="page" id="programs1" data-transition="slide">
     <div data-role="content" class="programs-container">
         <select class="programsdate">
             <option value="">Choose day</option>
@@ -167,7 +167,7 @@
 <!-- end of page -->
 
 <!-- programs SECOND page -->
-<div data-role="page" id="programs2" data-prev="home" data-next="proceedings" data-transition="slide">
+<div data-role="page" id="programs2" data-transition="slide">
     <div data-role="content" class="programs-container">
         <select class="programsdate">
             <option value="">Choose day</option>
@@ -290,9 +290,25 @@
                             <P>
                                 Conference Welcome Reception
 
-                            <div class="tablevenue">
-                                MBS, Foyer behind Hibiscus
-                            </div>
+                                <div class="tablevenue">
+                                    <a href="#hibiscus-map" data-rel="popup" data-position-to="window" data-transition="pop">MBS, Foyer behind Hibiscus</a>
+
+                                    <!-- + map POPUP + -->
+                                    <div data-role="popup" id="hibiscus-map" class="map-page" data-overlay-theme="b">
+                                        <div data-role="content" class="map-container">
+                                            <div class="map-content">
+                                                <div data-role="header">
+                                                    <h2>Hibiscus Foyer</h2>
+                                                </div>
+                                                <img src="images/map/hibiscus.png">
+                                            </div>
+                                        </div>
+                                        <a href="#" data-rel="back" data-role="button" data-theme="b" data-icon="delete"
+                                           data-iconpos="notext" class="ui-btn-right">Close</a>
+                                    </div>
+
+                                </div>
+
                             </P>
                         </td>
                     </tr>
@@ -314,7 +330,7 @@
 <!-- end of page -->
 
 <!-- programs THIRD page -->
-<div data-role="page" id="programs3" data-prev="home" data-next="proceedings" data-transition="slide">
+<div data-role="page" id="programs3" data-transition="slide">
     <div data-role="content" class="programs-container">
         <select class="programsdate">
             <option value="">Choose day</option>
@@ -348,7 +364,24 @@
 
                             <div class="tablespeaker">Toh Chai Keong, Asst. Chief Executive, IDA</div>
                             </I>
-                            <div class="tablevenue">MBS, Jasmine Junior Ballroom</div>
+                            <div class="tablevenue">
+                                <a href="#jasmine-map" data-rel="popup" data-position-to="window" data-transition="pop">MBS, Jasmine Junior Ballroom</a>
+
+                                <!-- + map POPUP + -->
+                                <div data-role="popup" id="jasmine-map" class="map-page" data-overlay-theme="b">
+                                    <div data-role="content" class="map-container">
+                                        <div class="map-content">
+                                            <div data-role="header">
+                                                <h2>Jasmine Jr Ballroom</h2>
+                                            </div>
+                                            <img src="images/map/jasmine.png">
+                                        </div>
+                                    </div>
+                                    <a href="#" data-rel="back" data-role="button" data-theme="b" data-icon="delete"
+                                       data-iconpos="notext" class="ui-btn-right">Close</a>
+                                </div>
+
+                            </div>
                             </P>
                         </td>
                     </tr>
@@ -373,9 +406,25 @@
                             </P>
                             <P>
 
-                            <div class="tablevenue">
-                                MBS, Foyer behind Hibiscus
-                            </div>
+                              <div class="tablevenue">
+                                  <a href="#hibiscus-map2" data-rel="popup" data-position-to="window" data-transition="pop">MBS, Foyer behind Hibiscus</a>
+
+                                  <!-- + map POPUP + -->
+                                  <div data-role="popup" id="hibiscus-map2" class="map-page" data-overlay-theme="b">
+                                      <div data-role="content" class="map-container">
+                                          <div class="map-content">
+                                              <div data-role="header">
+                                                  <h2>Hibiscus Foyer</h2>
+                                              </div>
+                                              <img src="images/map/hibiscus.png">
+                                          </div>
+                                      </div>
+                                      <a href="#" data-rel="back" data-role="button" data-theme="b" data-icon="delete"
+                                         data-iconpos="notext" class="ui-btn-right">Close</a>
+                                  </div>
+
+                              </div>
+
                             </P>
                         </td>
                     </tr>
@@ -1041,9 +1090,25 @@
                             </P>
                             <P>
 
-                            <div class="tablevenue">
-                                MBS, Heliconia
-                            </div>
+                              <div class="tablevenue">
+                                  <a href="#heliconia-map" data-rel="popup" data-position-to="window" data-transition="pop">MBS, Heliconia</a>
+
+                                  <!-- + map POPUP + -->
+                                  <div data-role="popup" id="heliconia-map" class="map-page" data-overlay-theme="b">
+                                      <div data-role="content" class="map-container">
+                                          <div class="map-content">
+                                              <div data-role="header">
+                                                  <h2>Heliconia</h2>
+                                              </div>
+                                              <img src="images/map/heliconia.png">
+                                          </div>
+                                      </div>
+                                      <a href="#" data-rel="back" data-role="button" data-theme="b" data-icon="delete"
+                                         data-iconpos="notext" class="ui-btn-right">Close</a>
+                                  </div>
+
+                              </div>
+
                             </P>
                         </td>
                     </tr>
@@ -1062,9 +1127,25 @@
                             <P>
                                 Poster Session 1
 
-                            <div class="tablevenue">
-                                MBS, Heliconia
-                            </div>
+                                <div class="tablevenue">
+                                    <a href="#heliconia-map2" data-rel="popup" data-position-to="window" data-transition="pop">MBS, Heliconia</a>
+
+                                    <!-- + map POPUP + -->
+                                    <div data-role="popup" id="heliconia-map2" class="map-page" data-overlay-theme="b">
+                                        <div data-role="content" class="map-container">
+                                            <div class="map-content">
+                                                <div data-role="header">
+                                                    <h2>Heliconia</h2>
+                                                </div>
+                                                <img src="images/map/heliconia.png">
+                                            </div>
+                                        </div>
+                                        <a href="#" data-rel="back" data-role="button" data-theme="b" data-icon="delete"
+                                           data-iconpos="notext" class="ui-btn-right">Close</a>
+                                    </div>
+
+                                </div>
+
                             </P>
                         </td>
                     </tr>
@@ -1666,9 +1747,25 @@
                             </P>
                             <P>
 
-                            <div class="tablevenue">
-                                MBS, Foyer behind Hibiscus
-                            </div>
+                              <div class="tablevenue">
+                                  <a href="#hibiscus-map3" data-rel="popup" data-position-to="window" data-transition="pop">MBS, Foyer behind Hibiscus</a>
+
+                                  <!-- + map POPUP + -->
+                                  <div data-role="popup" id="hibiscus-map3" class="map-page" data-overlay-theme="b">
+                                      <div data-role="content" class="map-container">
+                                          <div class="map-content">
+                                              <div data-role="header">
+                                                  <h2>Hibiscus Foyer</h2>
+                                              </div>
+                                              <img src="images/map/hibiscus.png">
+                                          </div>
+                                      </div>
+                                      <a href="#" data-rel="back" data-role="button" data-theme="b" data-icon="delete"
+                                         data-iconpos="notext" class="ui-btn-right">Close</a>
+                                  </div>
+
+                              </div>
+
                             </P>
                             <hr></hr>
                             <P>
@@ -2285,7 +2382,7 @@
 <!-- end of page -->
 
 <!-- programs FOURTH page -->
-<div data-role="page" id="programs4" data-prev="home" data-next="proceedings" data-transition="slide">
+<div data-role="page" id="programs4" data-transition="slide">
     <div data-role="content" class="programs-container">
         <select class="programsdate">
             <option value="">Choose day</option>
@@ -2318,7 +2415,24 @@
 
                             <div class="tablespeaker">Jae Kyu Lee- AIS President</div>
                             </I>
-                            <div class="tablevenue">MBS, Jasmine Junior Ballroom</div>
+                            <div class="tablevenue">
+                                <a href="#jasmine-map2" data-rel="popup" data-position-to="window" data-transition="pop">MBS, Jasmine Junior Ballroom</a>
+
+                                <!-- + map POPUP + -->
+                                <div data-role="popup" id="jasmine-map2" class="map-page" data-overlay-theme="b">
+                                    <div data-role="content" class="map-container">
+                                        <div class="map-content">
+                                            <div data-role="header">
+                                                <h2>Jasmine Jr Ballroom</h2>
+                                            </div>
+                                            <img src="images/map/jasmine.png">
+                                        </div>
+                                    </div>
+                                    <a href="#" data-rel="back" data-role="button" data-theme="b" data-icon="delete"
+                                       data-iconpos="notext" class="ui-btn-right">Close</a>
+                                </div>
+
+                            </div>
                             </P>
                         </td>
                     </tr>
@@ -2343,9 +2457,25 @@
                             </P>
                             <P>
 
-                            <div class="tablevenue">
-                                MBS, Foyer behind Hibiscus
-                            </div>
+                              <div class="tablevenue">
+                                  <a href="#hibiscus-map4" data-rel="popup" data-position-to="window" data-transition="pop">MBS, Foyer behind Hibiscus</a>
+
+                                  <!-- + map POPUP + -->
+                                  <div data-role="popup" id="hibiscus-map4" class="map-page" data-overlay-theme="b">
+                                      <div data-role="content" class="map-container">
+                                          <div class="map-content">
+                                              <div data-role="header">
+                                                  <h2>Hibiscus Foyer</h2>
+                                              </div>
+                                              <img src="images/map/hibiscus.png">
+                                          </div>
+                                      </div>
+                                      <a href="#" data-rel="back" data-role="button" data-theme="b" data-icon="delete"
+                                         data-iconpos="notext" class="ui-btn-right">Close</a>
+                                  </div>
+
+                              </div>
+
                             </P>
                         </td>
                     </tr>
@@ -2952,9 +3082,25 @@
                             </P>
                             <P>
 
-                            <div class="tablevenue">
-                                MBS, Heliconia
-                            </div>
+                              <div class="tablevenue">
+                                  <a href="#heliconia-map3" data-rel="popup" data-position-to="window" data-transition="pop">MBS, Heliconia</a>
+
+                                  <!-- + map POPUP + -->
+                                  <div data-role="popup" id="heliconia-map3" class="map-page" data-overlay-theme="b">
+                                      <div data-role="content" class="map-container">
+                                          <div class="map-content">
+                                              <div data-role="header">
+                                                  <h2>Heliconia</h2>
+                                              </div>
+                                              <img src="images/map/heliconia.png">
+                                          </div>
+                                      </div>
+                                      <a href="#" data-rel="back" data-role="button" data-theme="b" data-icon="delete"
+                                         data-iconpos="notext" class="ui-btn-right">Close</a>
+                                  </div>
+
+                              </div>
+
                             </P>
                         </td>
                     </tr>
@@ -2973,9 +3119,25 @@
                             <P>
                                 Poster Session 3
 
-                            <div class="tablevenue">
-                                MBS, Heliconia
-                            </div>
+                                <div class="tablevenue">
+                                    <a href="#heliconia-map4" data-rel="popup" data-position-to="window" data-transition="pop">MBS, Heliconia</a>
+
+                                    <!-- + map POPUP + -->
+                                    <div data-role="popup" id="heliconia-map4" class="map-page" data-overlay-theme="b">
+                                        <div data-role="content" class="map-container">
+                                            <div class="map-content">
+                                                <div data-role="header">
+                                                    <h2>Heliconia</h2>
+                                                </div>
+                                                <img src="images/map/heliconia.png">
+                                            </div>
+                                        </div>
+                                        <a href="#" data-rel="back" data-role="button" data-theme="b" data-icon="delete"
+                                           data-iconpos="notext" class="ui-btn-right">Close</a>
+                                    </div>
+
+                                </div>
+
                             </P>
                         </td>
                     </tr>
@@ -3582,9 +3744,25 @@
                             </P>
                             <P>
 
-                            <div class="tablevenue">
-                                MBS, Foyer behind Hibiscus
-                            </div>
+                              <div class="tablevenue">
+                                  <a href="#hibiscus-map5" data-rel="popup" data-position-to="window" data-transition="pop">MBS, Foyer behind Hibiscus</a>
+
+                                  <!-- + map POPUP + -->
+                                  <div data-role="popup" id="hibiscus-map5" class="map-page" data-overlay-theme="b">
+                                      <div data-role="content" class="map-container">
+                                          <div class="map-content">
+                                              <div data-role="header">
+                                                  <h2>Hibiscus Foyer</h2>
+                                              </div>
+                                              <img src="images/map/hibiscus.png">
+                                          </div>
+                                      </div>
+                                      <a href="#" data-rel="back" data-role="button" data-theme="b" data-icon="delete"
+                                         data-iconpos="notext" class="ui-btn-right">Close</a>
+                                  </div>
+
+                              </div>
+
                             </P>
                         </td>
                     </tr>
@@ -4217,7 +4395,7 @@
 <!-- end of page -->
 
 <!-- programs FIFTH page -->
-<div data-role="page" id="programs5" data-prev="home" data-next="proceedings" data-transition="slide">
+<div data-role="page" id="programs5" data-transition="slide">
     <div data-role="content" class="programs-container">
         <select class="programsdate">
             <option value="">Choose day</option>
@@ -4850,9 +5028,25 @@
                             <P>
 
 
-                            <div class="tablevenue">
-                                MBS, Foyer behind Hibiscus
-                            </div>
+                              <div class="tablevenue">
+                                  <a href="#hibiscus-map6" data-rel="popup" data-position-to="window" data-transition="pop">MBS, Foyer behind Hibiscus</a>
+
+                                  <!-- + map POPUP + -->
+                                  <div data-role="popup" id="hibiscus-map6" class="map-page" data-overlay-theme="b">
+                                      <div data-role="content" class="map-container">
+                                          <div class="map-content">
+                                              <div data-role="header">
+                                                  <h2>Hibiscus Foyer</h2>
+                                              </div>
+                                              <img src="images/map/hibiscus.png">
+                                          </div>
+                                      </div>
+                                      <a href="#" data-rel="back" data-role="button" data-theme="b" data-icon="delete"
+                                         data-iconpos="notext" class="ui-btn-right">Close</a>
+                                  </div>
+
+                              </div>
+
                             </P>
                         </td>
                     </tr>
