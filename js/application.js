@@ -12,7 +12,6 @@ $(document).ready(function() {
       var goTo = "#" + $(this).val();
       $("body").attr("go-to", goTo);
       window.location.href = window.location.pathname + goTo;
-      $("." +  $(this).val()).attr('selected', 'selected');
     }
   });
 

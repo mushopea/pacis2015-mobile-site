@@ -194,11 +194,19 @@ hr {
 /* Programs */
 select {
   font-size: 1.6em;
+  border: 0px;
+  padding: 0.5em;
+  background-color: white;
+}
+
+.select-container {
+  display: block;
   top: 0;
   position: fixed;
   margin: 0;
-  border: 0px;
-  padding: 0.5em;
+  text-align: center;
+  width: 100%;
+  background-color: white;
 }
 
 .ui-btn-icon-right:after {
