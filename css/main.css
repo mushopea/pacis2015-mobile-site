@@ -167,6 +167,7 @@ hr {
 
 .home-image img {
   max-width: 60%;
+  max-width: 45vmin;
 }
 
 .home-description {
