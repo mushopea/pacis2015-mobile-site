@@ -20,15 +20,23 @@ function navprev(prev) {
 
 $(document).ready(function() {
   $(".panzoom").panzoom();
-});
 
-$(window).load(function(){
   $('.programsdate').on('change', function(){
     if (this.selectedIndex !== 0) {
-      window.location.href = window.location.pathname + "#" + $(this).val();
+      var goTo = "#" + $(this).val();
+      $("body").attr("go-to", goTo);
+      window.location.href = window.location.pathname + goTo;
     }
   });
+
+  $(".go-to").on('click', function(e){
+    e.preventDefault();
+    $(this).removeClass('ui-btn-active');
+    var goTo = $("body").attr("go-to") || "#programs1";
+    window.location.href = window.location.pathname + goTo;
+  });
 });
+
 
 $(document).on("pagecreate", function() {
   // animate accordion
