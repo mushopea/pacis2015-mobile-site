@@ -1,30 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-    <widget xmlns   = "http://www.w3.org/ns/widgets?"
-        xmlns:gap   = "http://phonegap.com/ns/1.0?"
-        id          = "org.pacis2015.pacis2015"
-        versionCode = "1.0.0" 
-        version     = "1.0.0" >
+<widget xmlns   = "http://www.w3.org/ns/widgets?"
+	xmlns:gap   = "http://phonegap.com/ns/1.0?"
+	id          = "org.pacis2015.pacis2015"
+	versionCode = "1.0.0" 
+	version     = "1.0.0"
+>
 
-    <!-- versionCode is optional and Android only -->
+	<!-- versionCode is optional and Android only -->
 
-    <name>PACIS 2015</name>
+	<name>PACIS 2015</name>
 
-    <description>
-        The official PACIS 2015 app
-    </description>
+	<description>
+		The official PACIS 2015 app
+	</description>
 
-    <author href="https://build.phonegap.com?" email="pacis2015@gmail.com">
-        PACIS 2015
-    </author>
-	
+	<author href="http://www.pacis2015.org" email="pacis2015@gmail.com">
+		PACIS 2015
+	</author>
+
 	<icon src="icon.png" />
-	
-	<platform name="android">
-		<icon src="icon.png"/>
-	</platform>
-	 
-	<platform name="ios">
-		<icon src="icon.png"/>
-	</platform>
+	<icon src="icon.png" gap:platform="android" />
+	<icon src="icon.png" gap:platform="ios" />
 
 </widget>
