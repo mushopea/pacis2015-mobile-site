@@ -18,5 +18,13 @@
     </author>
 	
 	<icon src="icon.png" />
+	
+	<platform name="android">
+		<icon src="icon.png"/>
+	</platform>
+	 
+	<platform name="ios">
+		<icon src="icon.png"/>
+	</platform>
 
 </widget>
