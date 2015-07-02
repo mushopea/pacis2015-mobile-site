@@ -33,7 +33,7 @@ $(document).ready(function() {
   $(".go-to").on('click', function(e){
     e.preventDefault();
     $(this).removeClass('ui-btn-active');
-    var goTo = $("body").attr("go-to") || "#programs1";
+    var goTo = $("body").attr("go-to") || "#programs";
     window.location.href = window.location.pathname + goTo;
   });
 
