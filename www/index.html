@@ -60,12 +60,16 @@
         {
             alert(file);
             alert(encodeURI(file));
+			
+			var parts = file.split("/");
+			
+			alert(parts[parts.length-1]);
 
             var fileTransfer = new FileTransfer();
             alert("1");
             fileTransfer.download(
-                    encodeURI(file),
-                    'cdvfile://localhost/persistent/Download/',
+                    encodeURI(file),					
+                    'cdvfile://localhost/persistent/Download/' + parts[parts.length-1],
                     function(entry) {
                         alert("download complete: " + entry.toURL());
                         console.log("download complete: " + entry.toURL());
