@@ -20,7 +20,7 @@
     <script src="js/panzoom.js"></script>
     <script src="js/pointertouch.js"></script>
     <script src="js/application.js"></script>
-    <!--<script src="js/FileTransfer.js"></script>-->
+    <script src="js/FileTransfer.js"></script>
 
     <!-- For iPhone 4 with high-resolution Retina display: -->
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="icons/appicon114.png">
@@ -73,6 +73,7 @@
                     function(error) {
                         alert("download error source " + error.source);
                         alert("download error source " + error.code);
+						alert("download error source " + error.exception);
 
                         console.log("download error source " + error.source);
                         console.log("download error target " + error.target);
