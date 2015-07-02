@@ -64,8 +64,9 @@
 
 			fileTransfer.download(
 				encodeURI(file),
-				'cdvfile://localhost/persistent/path/to/downloads/',
+				'cdvfile://localhost/persistent/Download/',
 				function(entry) {
+					alert("download complete: " + entry.toURL());
 					console.log("download complete: " + entry.toURL());
 				},
 				function(error) {
