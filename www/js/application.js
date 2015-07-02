@@ -22,12 +22,8 @@ function navprev(prev) {
 $(document).ready(function() {
   $(".panzoom").panzoom();
 
-  $('.programsdate').on('change', function(){
-    if (this.selectedIndex !== 0) {
-      var goTo = "#" + $(this).val();
-      $("body").attr("go-to", goTo);
-      window.location.href = window.location.pathname + goTo;
-    }
+  $(".goto").click(function(){
+    $("body").attr("go-to", $(this).attr("href"));
   });
 
   $(".go-to").on('click', function(e){
