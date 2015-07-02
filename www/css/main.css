@@ -210,21 +210,27 @@ hr {
   height: 100%;
 }
 
-/*
-.programs-day-header {
+
+/*.programs-day-header {
   position: fixed;
   margin: 0px auto;
   text-align: center;
   width: 100%;
   background-color: rgb(187, 202, 222);
-  top: 0px;
+  top: 20px;
+  z-index: 999;
 }*/
+
+.programs-day-header h1 {
+  font-size: 1.5em;
+}
 
 /* PROGRAMS NAV */
 .nav-container {
   background-color: #262739;
   position: fixed;
   width: 100%;
+  z-index: 1000;
 }
 
 .nav-title {
