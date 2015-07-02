@@ -18,6 +18,7 @@ function navprev(prev) {
   });
 }
 
+
 $(document).ready(function() {
   $(".panzoom").panzoom();
 
@@ -35,6 +36,24 @@ $(document).ready(function() {
     var goTo = $("body").attr("go-to") || "#programs1";
     window.location.href = window.location.pathname + goTo;
   });
+
+  // Close the menu when click outisde
+  $(document).click(function(event) {
+    var div =  $('.nav > ul');
+    if(!$(event.target).closest('.nav').length) {
+      if($(div).is(":visible")) {
+        $(div).hide()
+      }
+    }
+  });
+
+  // toggle the menu with the button
+  $(".nav").on('click', function() {
+    var div =  $('.nav > ul');
+    div.fadeToggle();
+  });
+
+
 });
 
 
@@ -104,3 +123,4 @@ $(document).on("pageshow", ".demo-page", function() {
     $(".prev").addClass("ui-state-disabled");
   }
 });
+

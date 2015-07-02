@@ -1,39 +1,39 @@
 /* font */
 @font-face {
-    font-family: 'Open Sans';
-    src: url(../fonts/OpenSans-Regular.ttf);
+  font-family: 'Open Sans';
+  src: url(../fonts/OpenSans-Regular.ttf);
 }
 
 @font-face {
-    font-family: 'Open Sans';
-    src: url(../fonts/OpenSans-Bold.ttf);
-    font-weight: bold;
+  font-family: 'Open Sans';
+  src: url(../fonts/OpenSans-Bold.ttf);
+  font-weight: bold;
 }
 
 @font-face {
-    font-family: 'Open Sans';
-    src: url(../fonts/OpenSans-Light.ttf);
-    font-weight: 300;
+  font-family: 'Open Sans';
+  src: url(../fonts/OpenSans-Light.ttf);
+  font-weight: 300;
 }
 
 @font-face {
-    font-family: 'Open Sans';
-    src: url(../fonts/OpenSans-Italic.ttf);
-    font-style: italic;
+  font-family: 'Open Sans';
+  src: url(../fonts/OpenSans-Italic.ttf);
+  font-style: italic;
 }
 
 @font-face {
-    font-family: 'Open Sans';
-    src: url(../fonts/OpenSans-BoldItalic.ttf);
-    font-weight: bold;
-    font-style: italic;
+  font-family: 'Open Sans';
+  src: url(../fonts/OpenSans-BoldItalic.ttf);
+  font-weight: bold;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: 'Open Sans';
-    src: url(../fonts/OpenSans-LightItalic.ttf);
-    font-weight: 300;
-    font-style: italic;
+  font-family: 'Open Sans';
+  src: url(../fonts/OpenSans-LightItalic.ttf);
+  font-weight: 300;
+  font-style: italic;
 }
 
 
@@ -210,6 +210,251 @@ hr {
   height: 100%;
 }
 
+/*
+.programs-day-header {
+  position: fixed;
+  margin: 0px auto;
+  text-align: center;
+  width: 100%;
+  background-color: rgb(187, 202, 222);
+  top: 0px;
+}*/
+
+/* PROGRAMS NAV */
+.nav-container {
+  background-color: #262739;
+  position: fixed;
+  width: 100%;
+}
+
+.nav-title {
+  color: white;
+  text-shadow: none;
+  font-size: 1.5em;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.nav-title > i {
+  padding-left: 5px;
+}
+
+.nav {
+  position: relative;
+}
+
+.nav-container .ui-link {
+  text-align: center;
+}
+
+.nav > a {
+}
+.nav:not( :target ) > a:first-of-type,
+.nav:target > a:last-of-type
+{
+  display: block;
+}
+
+/* first level */
+
+.nav {
+  width: 60em; /* 1000 */
+  font-weight: 400;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  margin-left: -30em; /* 30 480 */
+}
+
+
+.nav > a
+{
+  display: none;
+}
+
+.nav li
+{
+  position: relative;
+}
+.nav li a
+{
+  color: #fff;
+  display: block;
+}
+.nav li a:active
+{
+  background-color: #E0AF50 !important;
+}
+
+.nav span:after
+{
+  width: 0;
+  height: 0;
+  border: 0.313em solid transparent; /* 5 */
+  border-bottom: none;
+  border-top-color: #262739;
+  content: '';
+  vertical-align: middle;
+  display: inline-block;
+  position: relative;
+  right: -0.313em; /* 5 */
+}
+
+/* first level */
+
+.nav > ul
+{
+  height: 3.75em; /* 60 */
+  background-color: white;
+}
+.nav > ul > li
+{
+  width: 25%;
+  height: 100%;
+  float: left;
+  list-style: outside none none;
+}
+.nav > ul > li > a
+{
+  height: 100%;
+  font-size: 1.5em; /* 24 */
+  line-height: 2.5em; /* 60 (24) */
+  text-align: center;
+}
+.nav > ul > li:hover > a,
+.nav > ul:not( :hover ) > li.active > a
+{
+  background-color: #262739;
+  transition: 0.3s ease-in;
+}
+
+
+/* second level */
+
+.nav li ul
+{
+  background-color: #262739;
+  display: none;
+  position: absolute;
+  top: 100%;
+}
+.nav li:hover ul
+{
+  display: block;
+  left: 0;
+  right: 0;
+}
+.nav li:not( :first-child ):hover ul
+{
+  left: -1px;
+}
+.nav li ul a
+{
+  font-size: 1.25em; /* 20 */
+  border: 0px;
+  padding: 0.75em; /* 15 (20) */
+}
+.nav li ul li a:hover,
+.nav li ul:not( :hover ) li.active a
+{
+  background-color: #262739;
+}
+
+
+@media only screen and ( max-width: 5000px ) /* 1000 */
+{
+  .nav
+  {
+    width: 100%;
+    position: static;
+    margin: 0;
+  }
+}
+
+@media only screen and ( max-width: 5000px ) /* 640 */
+{
+  html
+  {
+    font-size: 75%; /* 12 */
+  }
+
+  .nav
+  {
+    position: relative;
+    top: auto;
+    left: auto;
+  }
+  .nav > a
+  {
+    width: 100%; /* 50 */
+    height: 50px; /* 50 */
+    text-align: left;
+    background-color: #262739;
+    position: relative;
+    border: 0px;
+  }
+
+  .nav:not( :target ) > a:first-of-type,
+  .nav:target > a:last-of-type
+  {
+    display: block;
+  }
+
+
+  /* first level */
+
+  .nav > ul
+  {
+    height: auto;
+    display: none;
+    padding: 0;
+    margin: 0;
+  }
+  .nav:target > ul
+  {
+    display: block;
+  }
+  .nav > ul > li
+  {
+    width: 100%;
+    float: none;
+  }
+  .nav > ul > li > a
+  {
+    height: auto;
+    text-align: left;
+    padding: 0 !important; /* 20 (24) */
+    color: #C7D2FF !important;
+    text-shadow: none;
+    text-decoration: none;
+  }
+
+  .nav > ul > li:nth-child(1) {
+    background-color: rgba(38, 39, 57, 0.95);
+  }
+
+  .nav > ul > li:nth-child(2) {
+    background-color: rgba(38, 39, 57, 0.9);
+  }
+
+  .nav > ul > li:nth-child(3) {
+    background-color: rgba(38, 39, 57, 0.85);
+  }
+
+  .nav > ul > li:nth-child(4) {
+    background-color: rgba(38, 39, 57, 0.8);
+  }
+
+  .nav > ul > li:nth-child(5) {
+    background-color: rgba(38, 39, 57, 0.75);
+  }
+
+}
+
+/* programs day */
 .programs-day {
   padding: 30px 10px 50px;
 }
@@ -320,7 +565,7 @@ hr {
 /* map dialog */
 
 .map-content img {
-    width: 100%;
+  width: 100%;
 }
 
 .map-page {
@@ -333,7 +578,7 @@ hr {
 }
 
 .ui-header .ui-title {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .ui-overlay-shadow {
@@ -402,17 +647,17 @@ hr {
 }
 
 .proceeding-paper {
-	padding: 2px 20px;
-	margin: 20px;
+  padding: 2px 20px;
+  margin: 20px;
   border-radius: 0.5em;
 }
 
 .proceeding-paper:nth-child(odd) {
-	background-color: #E2ECFA;
+  background-color: #E2ECFA;
 }
 
 .proceeding-paper:nth-child(even) {
-	background-color: #FCFEFF;
+  background-color: #FCFEFF;
 }
 
 .proceedings-content h3 {
