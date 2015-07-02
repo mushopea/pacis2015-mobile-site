@@ -62,7 +62,7 @@
 			alert(encodeURI(file));
 			
 			var fileTransfer = new FileTransfer();
-
+			alert("1");
 			fileTransfer.download(
 				encodeURI(file),
 				'cdvfile://localhost/persistent/Download/',
@@ -71,12 +71,13 @@
 					console.log("download complete: " + entry.toURL());
 				},
 				function(error) {
+					alert("download error source " + error.source);
 					console.log("download error source " + error.source);
 					console.log("download error target " + error.target);
 					console.log("upload error code" + error.code);
 				}
 			);
-
+			alert("2");
 		}
 	</script>
 	
