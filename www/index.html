@@ -58,21 +58,36 @@
     <script>
         function downloadFile(file)
         {
-            alert(file);
-            alert(encodeURI(file));
-			
+            var encodedURI = encodeURI(file);			
 			var parts = file.split("/");
-			
-			alert(parts[parts.length-1]);
+			var filePath = 'cdvfile://localhost/persistent/Download/' + parts[parts.length-1];
+			alert(filePath);
 
             var fileTransfer = new FileTransfer();
             alert("1");
             fileTransfer.download(
-                    encodeURI(file),					
-                    'cdvfile://localhost/persistent/Download/' + parts[parts.length-1],
+                    encodedURI,					
+                    filePath,
                     function(entry) {
                         alert("download complete: " + entry.toURL());
                         console.log("download complete: " + entry.toURL());
+						
+						cordova.plugins.fileOpener2.open(
+							filePath,
+							'application/pdf', 
+							{ 
+								error : function(e) { 
+									alert('Error status: ' + e.status + ' - Error message: ' + e.message);
+									console.log('Error status: ' + e.status + ' - Error message: ' + e.message);
+								},
+								success : function () {
+									alert('file opened successfully');
+									console.log('file opened successfully');
+								}
+							}
+						);
+
+						
                     },
                     function(error) {
                         alert("download error source " + error.source);
