@@ -52,6 +52,28 @@
             }
         })(document, window.navigator, "standalone")
     </script>
+	
+	<script>
+		function downloadFile(file)
+		{
+		alert(file);
+			cordova.plugins.fileOpener2.open(
+								file,
+								'application/pdf', 
+								{ 
+									error : function(e) { 
+										alert('Error status: ' + e.status + ' - Error message: ' + e.message);
+										console.log('Error status: ' + e.status + ' - Error message: ' + e.message);
+									},
+									success : function () {
+										alert('file opened successfully');                
+										console.log('file opened successfully');                
+									}
+								}
+							);
+		}
+	</script>
+	
 </head>
 
 <body>
@@ -5686,7 +5708,11 @@
                     <div class="proceedings-section">
                         <!-- section content -->
                         <div class="proceeding-paper">
-                            <p><b>Title:</b> <a
+                            <p><b>Title:</b> 													
+							
+							<a href="javascript:downloadFile('http://pacis2015.comp.nus.edu.sg/_proceedings/PACIS_2015_submission_70.pdf');">Test</a>
+							
+							<a
                                     href="http://pacis2015.comp.nus.edu.sg/_proceedings/PACIS_2015_submission_70.pdf"
                                     target="_blank">New Service Model Based on Present Biased Preferences</a></p><b>Authors:</b>
                             Yu-Chen Yang, Chao Ding and Hsing K. Cheng</p>
