@@ -57,21 +57,30 @@
 	<script>
 		function downloadFile(file)
 		{
-		alert(file);
-			cordova.plugins.fileOpener2.open(
-								file,
-								'application/pdf', 
-								{ 
-									error : function(e) { 
-										alert('Error status: ' + e.status + ' - Error message: ' + e.message);
-										console.log('Error status: ' + e.status + ' - Error message: ' + e.message);
-									},
-									success : function () {
-										alert('file opened successfully');                
-										console.log('file opened successfully');                
-									}
-								}
-							);
+			alert(file);
+			alert(encodeURI(file));
+			
+			var fileTransfer = new FileTransfer();
+
+			fileTransfer.download(
+				encodeURI(file),
+				'cdvfile://localhost/persistent/path/to/downloads/',
+				function(entry) {
+					console.log("download complete: " + entry.toURL());
+				},
+				function(error) {
+					console.log("download error source " + error.source);
+					console.log("download error target " + error.target);
+					console.log("upload error code" + error.code);
+				},
+				false,
+				{
+					headers: {
+						"Authorization": "Basic dGVzdHVzZXJuYW1lOnRlc3RwYXNzd29yZA=="
+					}
+				}
+			);
+
 		}
 	</script>
 	

@@ -15,6 +15,8 @@
 		PACIS 2015
 	</author>
 
-	<icon src="icon.png" />		
+	<icon src="icon.png" />
+	
+	<gap:plugin name="org.apache.cordova.file-transfer" version="0.4.6" />
 
 </widget>
