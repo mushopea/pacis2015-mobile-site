@@ -60,7 +60,7 @@
         {
             var encodedURI = encodeURI(file);			
 			var parts = file.split("/");
-			var filePath = 'cdvfile://localhost/persistent/Download/' + parts[parts.length-1];
+			var filePath = 'cdvfile://localhost/persistent/' + parts[parts.length-1];
 
             var fileTransfer = new FileTransfer();
 
