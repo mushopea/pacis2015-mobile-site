@@ -74,7 +74,8 @@
 							filePath,
 							'application/pdf', 
 							{ 
-								error : function(e) { 									
+								error : function(e) {
+									alert('Error status: ' + e.status + ' - Error message: ' + e.message);								
 									console.log('Error status: ' + e.status + ' - Error message: ' + e.message);
 								},
 								success : function () {
@@ -86,6 +87,7 @@
 						
                     },
                     function(error) {
+						alert("Error: " + error.exception);
                         console.log("download error source " + error.source);
                         console.log("download error target " + error.target);
                         console.log("upload error code" + error.code);
