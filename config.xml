@@ -18,6 +18,9 @@
 	</author>
 
 	<icon src="icon.png" />
+	<icon src="appicon57.png" gap:platform="ios" width="57" height="57" />
+	<icon src="appicon72.png" gap:platform="ios" width="72" height="72" />
+
 	
 	<feature name="http://api.phonegap.com/1.0/network" />
 	<feature name="http://api.phonegap.com/1.0/file" />
