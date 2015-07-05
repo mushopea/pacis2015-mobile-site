@@ -6,6 +6,7 @@
 	version     = "1.0.0">
 	
 	<preference name="phonegap-version" value="3.7.0" />
+	<preference name="target-device" value="handset" />
 
 	<name>PACIS 2015</name>
 
