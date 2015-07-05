@@ -64,39 +64,28 @@
 
             var fileTransfer = new FileTransfer();
 
-			alert("filePath:" + filePath);
+			
 			
             fileTransfer.download(
                     encodedURI,					
                     filePath,
-                    function(entry) {
-					
-						alert("download complete: " + entry.toURL());
+                    function(entry) {									
                         console.log("download complete: " + entry.toURL());
 						
 						cordova.plugins.fileOpener2.open(
-							filePath,
+							entry.toURL(),
 							'application/pdf', 
 							{ 
-								error : function(e) {
-									alert('Error status: ' + e.status + ' - Error message: ' + e.message);								
+								error : function(e) {									
 									console.log('Error status: ' + e.status + ' - Error message: ' + e.message);
 								},
 								success : function () {
-									alert('file opened successfully');
 									console.log('file opened successfully');
 								}
 							}
 						);
-
-						
                     },
-                    function(error) {
-						alert("download error source " + error.source);
-                        alert("download error target " + error.target);
-                        alert("upload error code" + error.code);
-						alert("Error: " + error.exception);
-						
+                    function(error) {						
                         console.log("download error source " + error.source);
                         console.log("download error target " + error.target);
                         console.log("upload error code" + error.code);
